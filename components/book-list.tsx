@@ -28,7 +28,7 @@ export default async function BookList({ id }: { id: string }) {
                     <h6>{item.title}</h6>
                     <p>{item.author}</p>
                   </div>
-                  <Link href={item.amazon_product_url} target="_blank">
+                  <Link prefetch href={item.amazon_product_url} target="_blank">
                     Buy Now!
                   </Link>
                 </div>

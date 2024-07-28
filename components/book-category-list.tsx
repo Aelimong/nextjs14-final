@@ -19,7 +19,7 @@ export default async function BookCategoryList() {
           return (
             <>
               <li className={styles.book_category_item}>
-                <Link href={`/list/${item.list_name_encoded}`}>
+                <Link prefetch href={`/list/${item.list_name_encoded}`}>
                   {item.display_name} &rarr;
                 </Link>
               </li>
