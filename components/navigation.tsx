@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/navigation.module.scss";
+import styles from "../styles/Navigation.module.scss";
 
 const Navigation = () => {
   return (

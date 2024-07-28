@@ -1,11 +1,9 @@
 import { Suspense } from "react";
 import styles from "../../../styles/Detail.module.scss";
-import BookList from "../../../components/book-list";
-
-export const API_URL = "https://books-api.nomadcoders.workers.dev/list?name=";
+import BookList, { API_URL_BOOKS } from "../../../components/book-list";
 
 async function getBooks(id: string) {
-  const response = await fetch(`${API_URL}${id}`);
+  const response = await fetch(`${API_URL_BOOKS}${id}`);
   const json = await response.json();
   return json;
 }

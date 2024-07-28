@@ -1,9 +1,11 @@
 import styles from "../styles/BookList.module.scss";
 import Link from "next/link";
-import { API_URL } from "../app/list/[id]/page";
+
+export const API_URL_BOOKS =
+  "https://books-api.nomadcoders.workers.dev/list?name=";
 
 async function getBooks(id: string) {
-  const response = await fetch(`${API_URL}${id}`);
+  const response = await fetch(`${API_URL_BOOKS}${id}`);
   const json = await response.json();
   return json;
 }
